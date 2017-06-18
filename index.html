@@ -46,6 +46,25 @@
 // program starts here -------------------------------------------------------------------------------------
 // program starts here -------------------------------------------------------------------------------------
 
+          noStroke();
+
+background(82, 222, 240); // color of the sky
+
+var sunSize = 30; // starting size for the sun
+
+draw = function() {
+
+ // The sun
+fill(255, 204, 0); // color of the sun
+ellipse(200, 298, sunSize, sunSize); // position and size of sun
+
+// The land
+fill(76, 168, 67); // color of the land
+rect(0, 300, 400, 100);
+
+sunSize = sunSize + 1; // speed of the growth of the sun
+
+};
 
   
 };
