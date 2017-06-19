@@ -47,6 +47,7 @@
 // program starts here -------------------------------------------------------------------------------------
   
 noStroke();
+var mouthSize = 120;          
 var eyeSize = 40; // starting eye size
 var x = 600; // starting location
 
@@ -62,9 +63,9 @@ draw = function() {
     
     // mouth
     fill(255, 0, 239); // mouth color
-    ellipse(x + 50, 240, 120, 136); // mouth shape
+    ellipse(x + 50, 240, mouthSize, mouthSize + 16); // mouth shape
     
-    eyeSize++;
+    mouthSize = mouthSize + 1;
 };
           
 // program ends here ----------------------------------------------------------------------------------------
